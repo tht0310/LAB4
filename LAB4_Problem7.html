@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<style type="text/css">
+			ul {
+				padding: 0px 110px;
+				list-style-type: none;
+				background-color: navy;
+				color: white;
+			}
+			a{
+				text-decoration: none;
+				color: white;
+			}
+			li:hover {
+				background-color: orange;
+			}
+			#parent li {
+				display: inline-block;
+				padding: 10px 20px;
+				position: relative;
+			}
+			.children {
+				display: none;
+			}
+			#parent li:hover .children{
+				display: block;
+				position: absolute;
+			}
+		</style>
+	</head>
+	<body>
+		<ul id="parent">
+			<li>Trang chủ</li>
+			<li>
+				<a href="">Khoa CNTT ▼</a>
+				<ul class="children">
+					<li class="firstsubItem"><a href="">Giới Thiệu</a></li>
+						    		<li class="firstsubItem"><a href="">Lời Ngỏ Từ Trưởng Khoa</a></li>
+						    		<li class="firstsubItem"><a href="">Giảng Viên</a></li>
+						    		<li class="firstsubItem"><a href="">Hình Ảnh CIT</a></li>
+						    		<li class="firstsubItem"><a href="">Video</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="">Chương trình đào tạo ▼</a>
+				<ul class="children">
+					<li class="firstsubItem"><a href="">Ngành Kỹ Thuật Phần Mềm</a></li>
+		    		<li class="firstsubItem"><a href="">Ngành Mạng Máy Tính Và Truyền Thông Dữ Liệu</a></li>
+		    		<li class="firstsubItem"><a href="">Ngành Khoa Học Máy Tính</a></li>
+				</ul>
+			</li>
+			<li>Tin tức</li>
+			<li>Sự kiện</li>
+			<li>Nghiên cứu khoa học</li>
+			<li>
+				<a href="">Giáo vụ ▼</a>
+				<ul class="children">
+					<<li class="firstsubItem"><a href="">Biểu Mẫu</a></li>
+					<li class="firstsubItem"><a href="">Thông Báo Học Vụ</a></li>
+				</ul>
+			</li>
+			<li>Liên hệ</li>
+		</ul>
+	</body>
+</html>

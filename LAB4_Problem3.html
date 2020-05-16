@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<style type="text/css">
+			ul {
+				list-style-type: none;
+			}
+			#parent:first-child {
+			}
+			#children {
+				display: none;
+			}
+			#parent li:hover #children {
+				color: grey;
+				display: block;
+			}
+			a {
+				color: black;
+			}
+			body {
+				font-size: 30px;
+			}
+		</style>
+	</head>
+	<body>
+		<ul id="parent">
+			<li><a href="">List item</a>
+				<ul id="children">
+					<li>Sublist Item</li>
+					<li>Sublist Item</li>
+					<li>Sublist Item</li>
+					<li>Sublist Item</li>
+				</ul>
+			</li>
+			<li>List item</li>
+			<li>List item</li>
+			<li>List item</li>
+		</ul>
+	</body>
+</html>
