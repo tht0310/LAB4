@@ -4,64 +4,81 @@
 		<title></title>
 		<style type="text/css">
 			ul {
-				padding: 0px 110px;
-				list-style-type: none;
+				list-style-type: none;	
+			}
+			#parent{
 				background-color: navy;
-				color: white;
+				margin: 0px;	
+				padding: 0 0 0 190px;
+				border-bottom: 5px solid orange;
+			}
+			#parent li{
+				display: inline-block;
+				padding: 10px 20px;
+				position: relative;
 			}
 			a{
 				text-decoration: none;
 				color: white;
 			}
-			li:hover {
+			#parent li:hover{
 				background-color: orange;
 			}
 			#parent li {
-				display: inline-block;
-				padding: 10px 20px;
-				position: relative;
+				border-right: 1px solid white;
+			}
+			#parent li:first-child{
+				border-left: 1px solid white;
+				background-color: orange;
 			}
 			.children {
 				display: none;
+				background-color: navy;
 			}
-			#parent li:hover .children{
+			#parent li:hover .children {
 				display: block;
 				position: absolute;
+			}
+			.children li {
+				border-bottom: 1px solid white;
+			}
+			.children li:last-child{
+				border-bottom: none;
 			}
 		</style>
 	</head>
 	<body>
-		<ul id="parent">
-			<li>Trang chủ</li>
-			<li>
-				<a href="">Khoa CNTT ▼</a>
-				<ul class="children">
-					<li class="firstsubItem"><a href="">Giới Thiệu</a></li>
-						    		<li class="firstsubItem"><a href="">Lời Ngỏ Từ Trưởng Khoa</a></li>
-						    		<li class="firstsubItem"><a href="">Giảng Viên</a></li>
-						    		<li class="firstsubItem"><a href="">Hình Ảnh CIT</a></li>
-						    		<li class="firstsubItem"><a href="">Video</a></li>
-				</ul>
-			</li>
-			<li>
-				<a href="">Chương trình đào tạo ▼</a>
-				<ul class="children">
-					<li class="firstsubItem"><a href="">Ngành Kỹ Thuật Phần Mềm</a></li>
-		    		<li class="firstsubItem"><a href="">Ngành Mạng Máy Tính Và Truyền Thông Dữ Liệu</a></li>
-		    		<li class="firstsubItem"><a href="">Ngành Khoa Học Máy Tính</a></li>
-				</ul>
-			</li>
-			<li>Tin tức</li>
-			<li>Sự kiện</li>
-			<li>Nghiên cứu khoa học</li>
-			<li>
-				<a href="">Giáo vụ ▼</a>
-				<ul class="children">
-					<<li class="firstsubItem"><a href="">Biểu Mẫu</a></li>
-					<li class="firstsubItem"><a href="">Thông Báo Học Vụ</a></li>
-				</ul>
-			</li>
-			<li>Liên hệ</li>
-		</ul>
+			<ul id="parent">
+				<li><a href="#">Trang chủ</a></li>
+				<li>
+					<a href="#">Khoa CNTT</a>
+					<ul class="children">
+						<li><a href="#">Giới thiệu</a></li>
+						<li><a href="#">Lời ngỏ từ trưởng khoa</a></li>
+						<li><a href="#">Giảng viên</a></li>
+						<li><a href="#">Hình ảnh CIT</a></li>
+						<li><a href="#">Video</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">Chương trình đào tạo</a>
+					<ul class="children">
+						<li><a href="#">Ngành Kỹ thuật phần mềm</a></li>
+						<li><a href="#">Ngành Khoa học máy tính</a></li>
+						<li><a href="#">Ngành Mạng máy tính và Truyền thông dữ liệu</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Tin tức</a></li>
+				<li><a href="#">Sự kiện</a></li>
+				<li><a href="#">Nghiên cứu khoa học</a></li>
+				<li>
+					<a href="#">Giáo vụ</a>
+					<ul class="children">
+						<li><a href="#">Biểu mẫu</a></li>
+						<li><a href="#">Thông báo học vụ</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Liên hệ</a></li>
+			</ul>
 	</body>
 </html>
